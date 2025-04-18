@@ -7,7 +7,7 @@
 
 A modern, responsive developer portfolio website with animated elements, particle background, and functional contact form. Built with ❤️ and modern web technologies.
 
-[![Live Demo](https://img.shields.io/badge/❤️_Live_Demo-FF69B4?style=for-the-badge&logo=vercel&logoColor=white)](https://your-portfolio-link.vercel.app)
+[![Live Demo](https://img.shields.io/badge/❤️_Live_Demo-FF69B4?style=for-the-badge&logo=vercel&logoColor=white)](https://bapux03.github.io/Portfolio/)
 
 ## 🌟 Features
 
