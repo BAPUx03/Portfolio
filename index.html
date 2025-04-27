@@ -161,6 +161,13 @@
                 <li><a href="#skills" class="nav-link hover:text-primary">Skills</a></li>
                 <li><a href="#about" class="nav-link hover:text-primary">About</a></li>
                 <li><a href="#contact" class="nav-link hover:text-primary">Contact</a></li>
+                <li>
+    <a href="#share" onclick="sharePortfolio()" 
+       class="px-6 py-3 bg-primary text-dark font-bold rounded-lg hover:bg-cyan-400 transition-colors flex items-center gap-2">
+        <i class="fas fa-share-alt text-sm"></i> 
+        Share
+    </a>
+</li>
             </ul>
         </nav>
         
@@ -172,6 +179,13 @@
                 <li><a href="#skills" class="block hover:text-primary">Skills</a></li>
                 <li><a href="#about" class="block hover:text-primary">About</a></li>
                 <li><a href="#contact" class="block hover:text-primary">Contact</a></li>
+                <li>
+    <a href="#share" onclick="sharePortfolio()" 
+       class="block w-full text-center py-3 px-6 bg-primary text-dark font-bold rounded-lg hover:bg-cyan-400 transition-colors flex items-center justify-center gap-2">
+        <i class="fas fa-share-alt text-sm"></i> 
+        Share
+    </a>
+</li>
             </ul>
         </div>
     </header>
@@ -516,6 +530,24 @@
         // Update current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
+
+<script>
+function sharePortfolio() {
+    if (navigator.share) {
+        navigator.share({
+            title: 'Pruthviraj Portfolio',
+            text: 'Check out this developer portfolio!',
+            url: window.location.href
+        });
+    } else {
+        const url = window.location.href;
+        navigator.clipboard.writeText(url);
+        alert('Link copied to clipboard! Share this URL: ' + url);
+    }
+    return false;
+}
+</script>
+    
 </body>
 </html>
 
